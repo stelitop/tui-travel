@@ -7,12 +7,14 @@ public class TravelForm {
 	public float budget;
 	public int numPeople;
 	public Climate climate;
+	public TravelMethod travelMethod;
 	public Set<Activity> chosenActivities;
 
 	public TravelForm() {
 		budget = 0.0f;
 		numPeople = 0;
 		climate = Climate.Mild;
+		travelMethod = TravelMethod.Airplane;
 		chosenActivities = new HashSet<>();
 	}
 }
