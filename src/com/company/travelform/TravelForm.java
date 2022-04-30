@@ -1,4 +1,4 @@
-package com.company;
+package com.company.travelform;
 
 import java.util.HashSet;
 import java.util.Set;
