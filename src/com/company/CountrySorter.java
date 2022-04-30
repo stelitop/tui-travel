@@ -1,5 +1,10 @@
 package com.company;
 
+import com.company.travelform.Activity;
+import com.company.travelform.Climate;
+import com.company.travelform.Country;
+import com.company.travelform.TravelForm;
+
 import java.util.ArrayList;
 import java.util.List;
 
