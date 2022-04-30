@@ -1,5 +1,10 @@
 package com.company;
 
+import com.company.travelform.Activity;
+import com.company.travelform.Climate;
+import com.company.travelform.Country;
+import com.company.travelform.TravelForm;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +17,7 @@ public class CountrySorter {
     private static float calculateRankingScore(TravelForm form, Country country) {
         float score = 0.0f;
         for (Activity activity : form.chosenActivities) {
-            if (country.activityRanking.containsKey(activity)) {
+            if (country.activityRanking.containsKey(activity) && country.activityRanking.get(activity) != 0) {
                 score += 1.0f/(float)country.activityRanking.get(activity);
             }
         }
