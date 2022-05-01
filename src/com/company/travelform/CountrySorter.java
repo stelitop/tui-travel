@@ -1,9 +1,4 @@
-package com.company;
-
-import com.company.travelform.Activity;
-import com.company.travelform.Climate;
-import com.company.travelform.Country;
-import com.company.travelform.TravelForm;
+package com.company.travelform;
 
 import java.util.ArrayList;
 import java.util.List;
