@@ -1,0 +1,12 @@
+Name:Frog
+Climate:Mild
+Cost:3
+Activity:Museums:0:0
+Activity:Malls:0:0
+Activity:Theaters:0:0
+Activity:Monuments:0:0
+Activity:Beaches:0:0
+Activity:Zoos:0:0
+Activity:Clubs:0:0
+Activity:ArtGalleries:0:0
+Activity:BeautyAndSpa:0:0
