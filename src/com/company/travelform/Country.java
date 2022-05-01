@@ -1,9 +1,12 @@
 package com.company.travelform;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
+import java.util.Scanner;
 
 public class Country {
+    public static List<String> countryList;
 
     public String name;
     public Climate climate;
@@ -25,5 +28,20 @@ public class Country {
         this.climate = Climate.Mild;
         this.costsPerActivity = new HashMap<>();
         this.hotelCost = 0;
+    }
+
+    public static void loadCountries() {
+        countryList = new ArrayList();
+        try {
+            File file = new File("src/com/company/europe.txt");
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                String country = scanner.nextLine();
+                countryList.add(country.toLowerCase());
+            }
+        }
+        catch (IOException e){
+
+        }
     }
 }
